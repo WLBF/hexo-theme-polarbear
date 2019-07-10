@@ -10,6 +10,10 @@
           <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
         </noscript>
       </div>
+    {% elseif theme.gitalk.enable %}
+      <div class="comments" id="comments">
+        <div id="gitalk-container"></div>
+      </div>
     {% elif theme.duoshuo_shortname %}
       <div class="ds-thread" data-thread-key="{{ page.path }}"
            data-title="{{ page.title }}" data-url="{{ page.permalink }}">
